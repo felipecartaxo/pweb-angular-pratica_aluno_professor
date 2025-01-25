@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {ListagemComponent} from "./usuario/listagem/listagem.component";
 import {ManutencaoComponent} from "./usuario/manutencao/manutencao.component";
 import {ListagemCadastroComponent} from "./usuario/listagem-cadastro/listagem-cadastro.component";
+import { ListagemProfessorComponent } from './professor/listagem-professor/listagem-professor.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,11 @@ const routes: Routes = [
     path: 'listagem-cadastro-alunos',
     component: ListagemCadastroComponent
   },
-
+  // Configurando botão para redirecionar para o componente de listagem de professores
+  {
+    path: 'listagem-professor',
+    component: ListagemProfessorComponent
+  }
 ];
 
 @NgModule({
