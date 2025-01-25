@@ -4,6 +4,8 @@ import {ListagemComponent} from "./usuario/listagem/listagem.component";
 import {ManutencaoComponent} from "./usuario/manutencao/manutencao.component";
 import {ListagemCadastroComponent} from "./usuario/listagem-cadastro/listagem-cadastro.component";
 import { ListagemProfessorComponent } from './professor/listagem-professor/listagem-professor.component';
+import { CadastroProfessorComponent } from './professor/cadastro-professor/cadastro-professor.component';
+import { ListagemCadastroProfessorComponent } from './professor/listagem-cadastro-professor/listagem-cadastro-professor.component';
 
 const routes: Routes = [
   {
@@ -18,10 +20,19 @@ const routes: Routes = [
     path: 'listagem-cadastro-alunos',
     component: ListagemCadastroComponent
   },
-  // Configurando botão para redirecionar para o componente de listagem de professores
+
+  // Configurando botão para redirecionar para os componentes que realizarão o CRUD de professores
   {
     path: 'listagem-professor',
     component: ListagemProfessorComponent
+  },
+  {
+    path: 'cadastro-professor',
+    component: CadastroProfessorComponent
+  },
+  {
+    path: 'listagem-cadastro-professor',
+    component: ListagemCadastroProfessorComponent
   }
 ];
 
