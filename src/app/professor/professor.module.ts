@@ -4,9 +4,9 @@ import { ListagemProfessorComponent } from './listagem-professor/listagem-profes
 import { CadastroProfessorComponent } from './cadastro-professor/cadastro-professor.component';
 import { ListagemCadastroProfessorComponent } from './listagem-cadastro-professor/listagem-cadastro-professor.component';
 import { FormsModule } from "@angular/forms";
-import { MatButton, MatButtonModule } from "@angular/material/button";
-import { MatFormField, MatFormFieldModule } from "@angular/material/form-field";
-import { MatInput, MatInputModule } from "@angular/material/input";
+import { MatButtonModule } from "@angular/material/button";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
 import { MatCardModule } from "@angular/material/card";
 import { MatIconModule } from "@angular/material/icon";
 import { MatBadgeModule } from "@angular/material/badge";
@@ -28,8 +28,8 @@ import { MatBadgeModule } from "@angular/material/badge";
     MatBadgeModule
   ],
   exports: [
-      ListagemProfessorComponent,
-      CadastroProfessorComponent
+    ListagemProfessorComponent,
+    CadastroProfessorComponent
   ]
 })
 export class ProfessorModule { }
